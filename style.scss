@@ -1,0 +1,34 @@
+// 変数・mixin・関数
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// 初期化・共通
+@import 'base/reset';
+@import 'base/base';
+
+// レイアウト
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/section';
+
+// コンポーネント
+@import 'components/button';
+@import 'components/card';
+@import 'components/hero';
+@import 'components/menu';
+
+// ページ固有
+@import 'pages/home';
+@import 'pages/contact';
+
+// アニメーション
+@import 'animations/animation';
+// レスポンシブ対応
+// 全画像をレスポンシブ対応
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,30 @@
+.contact {
+  padding: 80px 20px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+
+  &__inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    display: block;
+    padding: 14px 32px;
+    background: #e89cae;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-top: 24px;   // ← 重なり防止
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__btn {
+    margin-top: 32px;   // ← スマホで余白を広く
+    width: 100%;        // ← ボタンを横幅いっぱいに
+  }
+}

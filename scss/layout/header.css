@@ -1,0 +1,113 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+  padding: 24px 0;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.header__nav ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.header__nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+.header__nav a:hover {
+  color: #e89cae;
+}
+.header__nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #e89cae;
+  transition: width 0.3s ease;
+}
+.header__nav a:hover::after {
+  width: 100%;
+}
+
+.header__reserve {
+  padding: 10px 20px;
+  background: #e89cae;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  transition: opacity 0.3s ease;
+}
+.header__reserve:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .header__reserve {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+.footer__mail {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #e89cae;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  transition: opacity 0.3s ease;
+}
+.footer__mail:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .footer__mail {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* スマホでも横並び維持（微調整のみ） */
+@media (max-width: 768px) {
+  .header__inner {
+    justify-content: center;
+    gap: 16px;
+  }
+  .header__nav ul {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .header__nav a {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=header.css.map */

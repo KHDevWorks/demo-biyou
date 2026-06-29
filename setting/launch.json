@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "Launch HTML Website",
+      "type":"chrome",
+      "request": "launch",
+      "file": "${workspaceFolder}/HTML/index.html",
+      "webRoot": "${workspaceFolder}/HTML",
+      "url": "http://localhost:5500/index.html",
+      "preLaunchTask": "Start Live Server",
+      "runtimeArgs": [
+        "--new-window"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+.fade-in {
+  @include fade-up(20px, 0.8s);
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  @include fade-up(40px, 1s);
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card--hover {
+  overflow: hidden;
+
+  .card__image {
+    transition: transform 0.6s ease;
+  }
+
+  &:hover .card__image {
+    transform: scale(1.05);
+  }
+}

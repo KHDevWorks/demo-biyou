@@ -1,0 +1,18 @@
+// -----------------------------
+// Functions
+// -----------------------------
+
+// px → rem 変換
+@function rem($px) {
+  @return ($px / 16) * 1rem;
+}
+
+// 色の透明度を変更
+@function alpha($color, $opacity) {
+  @return rgba($color, $opacity);
+}
+
+// 影の統一
+@function shadow($strength: 0.06) {
+  @return 0 8px 20px rgba(0, 0, 0, $strength);
+}

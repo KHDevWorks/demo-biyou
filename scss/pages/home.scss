@@ -1,0 +1,76 @@
+// -----------------------------
+// Home Page Styles
+// -----------------------------
+
+.home {
+  // Hero セクション
+  .hero {
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Concept
+  #concept {
+    text-align: center;
+
+    .section__heading {
+      font-size: rem(28);
+      margin-bottom: 16px;
+    }
+
+    .section__sub {
+      color: $color-sub;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  // Feature
+  #feature {
+    .card {
+      text-align: center;
+
+      &__title {
+        font-size: rem(18);
+      }
+
+      &__text {
+        font-size: rem(14);
+        color: $color-sub;
+      }
+    }
+  }
+
+  // Works
+  #works {
+    .card {
+      padding: 0;
+
+      &__image {
+        aspect-ratio: 4 / 3;
+        border-radius: $radius-md;
+      }
+    }
+  }
+
+  // Contact
+  #contact {
+    text-align: center;
+
+    .cta__title {
+      font-size: rem(24);
+      margin-bottom: 12px;
+    }
+
+    .cta__text {
+      color: #ddd;
+      margin-bottom: 24px;
+    }
+  }
+}

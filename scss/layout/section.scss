@@ -1,0 +1,12 @@
+.section {
+  padding: 80px 0;
+
+  &--alt {
+    background: $color-light;
+  }
+
+  &--dark {
+    background: $color-dark;
+    color: #fff;
+  }
+}

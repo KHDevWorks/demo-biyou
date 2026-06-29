@@ -1,0 +1,17 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@mixin fade-up($distance: 20px, $duration: 0.8s) {
+  opacity: 0;
+  transform: translateY($distance);
+  transition: opacity $duration ease, transform $duration ease;
+}

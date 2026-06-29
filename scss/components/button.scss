@@ -1,0 +1,11 @@
+.btn {
+  padding: 12px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+
+  &--primary {
+    background: $color-accent;
+    color: #fff;
+  }
+}

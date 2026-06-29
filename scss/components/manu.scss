@@ -1,0 +1,10 @@
+.menu-list {
+  list-style: none;
+  font-size: rem(16);
+  line-height: 2;
+
+  li {
+    margin-bottom: 8px;
+    color: $color-main;
+  }
+}
